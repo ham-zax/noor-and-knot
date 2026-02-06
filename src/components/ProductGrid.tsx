@@ -39,13 +39,13 @@ export function ProductGrid() {
             <h3 className="text-xl font-semibold tracking-tight text-charcoal">{featured.name}</h3>
             <p className="mt-2 text-sm leading-6 text-charcoal/75">{featured.description}</p>
             <p className="mt-2 text-xs uppercase tracking-[0.14em] text-taupe">{featured.attribute}</p>
-            <div className="mt-auto flex items-center justify-between pt-4">
+            <div className="mt-auto flex flex-col gap-2 pt-4 sm:flex-row sm:items-center sm:justify-between">
               <span className="text-sm font-medium text-taupe">{featured.fromPrice ?? "Custom pricing"}</span>
               <a
                 href={whatsappProductLink(featured.name)}
                 target="_blank"
                 rel="noreferrer"
-                className="inline-flex min-h-10 items-center rounded-full bg-charcoal px-4 text-xs font-semibold uppercase tracking-[0.12em] text-sand"
+                className="inline-flex min-h-10 w-full items-center justify-center rounded-full bg-charcoal px-4 text-xs font-semibold uppercase tracking-[0.08em] text-sand sm:w-auto"
               >
                 Order via WhatsApp
               </a>
@@ -71,13 +71,13 @@ export function ProductGrid() {
               <h3 className="text-lg font-semibold tracking-tight text-charcoal">{product.name}</h3>
               <p className="mt-2 text-sm leading-6 text-charcoal/75">{product.description}</p>
               <p className="mt-2 text-xs uppercase tracking-[0.14em] text-taupe">{product.attribute}</p>
-              <div className="mt-auto flex items-center justify-between gap-3 pt-4">
+              <div className="mt-auto flex flex-col gap-2 pt-4 sm:flex-row sm:items-center sm:justify-between sm:gap-3">
                 <span className="text-sm text-taupe">{product.fromPrice ?? "Custom"}</span>
                 <a
                   href={whatsappProductLink(product.name)}
                   target="_blank"
                   rel="noreferrer"
-                  className="inline-flex min-h-10 items-center rounded-full border border-charcoal/20 bg-sand px-4 text-xs font-semibold uppercase tracking-[0.12em] text-charcoal"
+                  className="inline-flex min-h-10 w-full items-center justify-center rounded-full border border-charcoal/20 bg-sand px-4 text-xs font-semibold uppercase tracking-[0.08em] text-charcoal sm:w-auto"
                 >
                   Order via WhatsApp
                 </a>
