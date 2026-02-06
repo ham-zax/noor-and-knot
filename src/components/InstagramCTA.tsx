@@ -17,6 +17,7 @@ export function InstagramCTA() {
             href={siteConfig.instagramUrl}
             target="_blank"
             rel="noreferrer"
+            aria-label="View Instagram profile"
             className="inline-flex items-center gap-2 rounded-full bg-charcoal px-5 py-3 text-sm font-medium text-sand transition hover:bg-charcoal/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold"
           >
             <Instagram className="h-4 w-4" />

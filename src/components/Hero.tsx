@@ -23,6 +23,7 @@ export function Hero() {
             href={siteConfig.whatsappUrl}
             target="_blank"
             rel="noreferrer"
+            aria-label="Order on WhatsApp"
             className="rounded-full bg-charcoal px-6 py-3 text-sm font-medium text-sand transition hover:bg-charcoal/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold"
           >
             <span className="inline-flex items-center gap-2">
@@ -34,6 +35,7 @@ export function Hero() {
             href={siteConfig.instagramUrl}
             target="_blank"
             rel="noreferrer"
+            aria-label="Shop on Instagram"
             className="rounded-full border border-taupe/40 bg-white/70 px-6 py-3 text-sm font-medium text-charcoal transition hover:border-gold/60 hover:text-charcoal focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold"
           >
             <span className="inline-flex items-center gap-2">

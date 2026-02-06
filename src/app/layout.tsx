@@ -14,6 +14,9 @@ export const metadata: Metadata = {
   title: `${siteConfig.brandName} | ${siteConfig.tagline}`,
   description: siteConfig.description,
   metadataBase: new URL("https://noor-and-knot.vercel.app"),
+  alternates: {
+    canonical: "/",
+  },
   openGraph: {
     title: `${siteConfig.brandName} | ${siteConfig.tagline}`,
     description: siteConfig.description,
@@ -21,6 +24,11 @@ export const metadata: Metadata = {
     siteName: siteConfig.brandName,
     locale: "en_US",
     type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: `${siteConfig.brandName} | ${siteConfig.tagline}`,
+    description: siteConfig.description,
   },
 };
 

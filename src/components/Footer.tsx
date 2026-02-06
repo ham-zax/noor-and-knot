@@ -14,7 +14,10 @@ export function Footer() {
           <ul className="mt-2 space-y-1">
             {siteConfig.navItems.map((item) => (
               <li key={item.href}>
-                <a href={item.href} className="hover:text-charcoal">
+                <a
+                  href={item.href}
+                  className="inline-flex min-h-11 items-center rounded-lg px-2 hover:bg-white/50 hover:text-charcoal"
+                >
                   {item.label}
                 </a>
               </li>
@@ -25,7 +28,12 @@ export function Footer() {
         <div>
           <p className="font-medium text-charcoal">Connect</p>
           <p className="mt-2">
-            <a href={siteConfig.instagramUrl} target="_blank" rel="noreferrer" className="hover:text-charcoal">
+            <a
+              href={siteConfig.instagramUrl}
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex min-h-11 items-center rounded-lg px-2 hover:bg-white/50 hover:text-charcoal"
+            >
               Instagram
             </a>
           </p>

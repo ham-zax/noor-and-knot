@@ -1,7 +1,7 @@
 "use client";
 
 import { FormEvent, useMemo, useState } from "react";
-import { Instagram, Mail } from "lucide-react";
+import { AlertCircle, CheckCircle2, Instagram, Mail } from "lucide-react";
 import { FaWhatsapp } from "react-icons/fa";
 
 import { siteConfig } from "@/config/site";
@@ -90,6 +90,7 @@ export function ContactForm() {
             href={siteConfig.whatsappUrl}
             target="_blank"
             rel="noreferrer"
+            aria-label="Order on WhatsApp"
             className="inline-flex items-center justify-center gap-2 rounded-2xl bg-charcoal px-5 py-3 text-sm font-medium text-sand transition hover:bg-charcoal/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold"
           >
             <FaWhatsapp className="h-4 w-4" />
@@ -99,6 +100,7 @@ export function ContactForm() {
             href={siteConfig.instagramUrl}
             target="_blank"
             rel="noreferrer"
+            aria-label="Shop on Instagram"
             className="inline-flex items-center justify-center gap-2 rounded-2xl border border-taupe/35 bg-sand px-5 py-3 text-sm font-medium text-charcoal transition hover:border-gold/60 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold"
           >
             <Instagram className="h-4 w-4" />
@@ -213,13 +215,22 @@ export function ContactForm() {
 
         {status.type !== "idle" ? (
           <div
+            role="status"
+            aria-live="polite"
             className={`mt-4 rounded-2xl border px-4 py-3 text-sm ${
               status.type === "success"
                 ? "border-sage/50 bg-sage/15 text-charcoal"
                 : "border-red-300 bg-red-50 text-red-700"
             }`}
           >
-            {status.message}
+            <p className="inline-flex items-center gap-2">
+              {status.type === "success" ? (
+                <CheckCircle2 className="h-4 w-4 text-sage" />
+              ) : (
+                <AlertCircle className="h-4 w-4" />
+              )}
+              {status.message}
+            </p>
           </div>
         ) : null}
       </div>
