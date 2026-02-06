@@ -1,0 +1,51 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/forms";
+
+@theme {
+  --color-sand: #f6f1e7;
+  --color-taupe: #8b7e74;
+  --color-sage: #8fae9b;
+  --color-charcoal: #1f1f1f;
+  --color-gold: #c8a24a;
+  --font-sans: var(--font-geist-sans);
+  --shadow-soft: 0 10px 30px rgba(31, 31, 31, 0.08);
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 6rem;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background: radial-gradient(circle at 15% 10%, #fff9ee, transparent 35%),
+    radial-gradient(circle at 85% 0%, #f1ebe2, transparent 35%), var(--color-sand);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a,
+button {
+  transition: all 180ms ease;
+  touch-action: manipulation;
+}
+
+input,
+select,
+textarea {
+  font-size: 16px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

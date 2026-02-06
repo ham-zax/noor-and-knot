@@ -1,0 +1,16 @@
+export const siteConfig = {
+  brandName: "Noor & Knot",
+  tagline: "Handmade with barakah.",
+  description:
+    "Handmade crochet pouches and mini bags with Islamic-inspired details, custom colors, and gift-ready finishing.",
+  instagramUrl: "https://instagram.com/REPLACE_ME",
+  whatsappUrl: "https://wa.me/REPLACE_ME",
+  contactEmail: "REPLACE_ME@example.com",
+  formActionUrl: "",
+  navItems: [
+    { label: "Bestsellers", href: "#bestsellers" },
+    { label: "Collections", href: "#collections" },
+    { label: "How it works", href: "#how-it-works" },
+    { label: "Contact", href: "#contact" },
+  ],
+} as const;
