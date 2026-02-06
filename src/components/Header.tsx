@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Instagram } from "lucide-react";
+import { Instagram, MessageCircle } from "lucide-react";
 
 import { siteConfig } from "@/config/site";
 
@@ -23,16 +23,27 @@ export function Header() {
             ))}
           </nav>
 
-          <a
-            href={siteConfig.instagramUrl}
-            target="_blank"
-            rel="noreferrer"
-            className="inline-flex items-center gap-2 rounded-full bg-charcoal px-4 py-2 text-sm font-medium text-sand transition hover:bg-charcoal/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold"
-          >
-            <Instagram className="h-4 w-4" />
-            <span className="sm:hidden">Instagram</span>
-            <span className="hidden sm:inline">Shop on Instagram</span>
-          </a>
+          <div className="flex items-center gap-2">
+            <a
+              href={siteConfig.whatsappUrl}
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex items-center gap-2 rounded-full border border-taupe/35 bg-white/70 px-3 py-2 text-sm font-medium text-charcoal transition hover:border-gold/60 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold"
+            >
+              <MessageCircle className="h-4 w-4" />
+              <span className="hidden sm:inline">WhatsApp</span>
+            </a>
+            <a
+              href={siteConfig.instagramUrl}
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex items-center gap-2 rounded-full bg-charcoal px-4 py-2 text-sm font-medium text-sand transition hover:bg-charcoal/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold"
+            >
+              <Instagram className="h-4 w-4" />
+              <span className="sm:hidden">Insta</span>
+              <span className="hidden sm:inline">Instagram</span>
+            </a>
+          </div>
         </div>
       </div>
     </header>

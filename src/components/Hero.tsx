@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { Instagram, MessageCircle } from "lucide-react";
 
 import { siteConfig } from "@/config/site";
 
@@ -18,18 +19,32 @@ export function Hero() {
         </p>
         <div className="flex flex-wrap items-center gap-3">
           <a
-            href={siteConfig.instagramUrl}
+            href={siteConfig.whatsappUrl}
             target="_blank"
             rel="noreferrer"
             className="rounded-full bg-charcoal px-6 py-3 text-sm font-medium text-sand transition hover:bg-charcoal/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold"
           >
-            Shop on Instagram
+            <span className="inline-flex items-center gap-2">
+              <MessageCircle className="h-4 w-4" />
+              Order on WhatsApp
+            </span>
           </a>
           <a
-            href="#contact"
+            href={siteConfig.instagramUrl}
+            target="_blank"
+            rel="noreferrer"
             className="rounded-full border border-taupe/40 bg-white/70 px-6 py-3 text-sm font-medium text-charcoal transition hover:border-gold/60 hover:text-charcoal focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold"
           >
-            Order / Custom Request
+            <span className="inline-flex items-center gap-2">
+              <Instagram className="h-4 w-4" />
+              Shop on Instagram
+            </span>
+          </a>
+          <a
+            href="#contact-email"
+            className="rounded-full border border-transparent px-2 py-1 text-sm font-medium text-taupe underline decoration-gold/70 underline-offset-4 transition hover:text-charcoal focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold"
+          >
+            Prefer email inquiry?
           </a>
         </div>
       </div>
