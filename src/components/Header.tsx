@@ -37,21 +37,20 @@ export function Header() {
               target="_blank"
               rel="noreferrer"
               aria-label="Order on WhatsApp"
-              className="inline-flex items-center gap-2 rounded-full border border-taupe/35 bg-white/70 px-3 py-2 text-sm font-medium text-charcoal transition hover:border-gold/60 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold"
+              className="hidden items-center gap-2 rounded-full border border-taupe/35 bg-white/70 px-3 py-2 text-sm font-medium text-charcoal transition hover:border-gold/60 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold md:inline-flex"
             >
               <FaWhatsapp className="h-4 w-4" />
-              <span className="hidden sm:inline">WhatsApp</span>
+              <span>WhatsApp</span>
             </a>
             <a
               href={siteConfig.instagramUrl}
               target="_blank"
               rel="noreferrer"
               aria-label="Shop on Instagram"
-              className="inline-flex items-center gap-2 rounded-full bg-charcoal px-4 py-2 text-sm font-medium text-sand transition hover:bg-charcoal/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold"
+              className="hidden items-center gap-2 rounded-full bg-charcoal px-4 py-2 text-sm font-medium text-sand transition hover:bg-charcoal/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold md:inline-flex"
             >
               <Instagram className="h-4 w-4" />
-              <span className="sm:hidden">Insta</span>
-              <span className="hidden sm:inline">Instagram</span>
+              <span>Instagram</span>
             </a>
             <button
               type="button"
@@ -68,6 +67,28 @@ export function Header() {
 
         {isMobileMenuOpen ? (
           <div id="mobile-nav-menu" className="mt-4 border-t border-taupe/20 pt-4 md:hidden">
+            <div className="mb-3 grid grid-cols-2 gap-2">
+              <a
+                href={siteConfig.whatsappUrl}
+                target="_blank"
+                rel="noreferrer"
+                onClick={closeMobileMenu}
+                className="inline-flex min-h-11 items-center justify-center gap-2 rounded-xl border border-taupe/30 bg-white/70 px-3 text-sm font-medium text-charcoal"
+              >
+                <FaWhatsapp className="h-4 w-4" />
+                WhatsApp
+              </a>
+              <a
+                href={siteConfig.instagramUrl}
+                target="_blank"
+                rel="noreferrer"
+                onClick={closeMobileMenu}
+                className="inline-flex min-h-11 items-center justify-center gap-2 rounded-xl bg-charcoal px-3 text-sm font-medium text-sand"
+              >
+                <Instagram className="h-4 w-4" />
+                Instagram
+              </a>
+            </div>
             <nav className="flex flex-col gap-1">
               {siteConfig.navItems.map((item) => (
                 <a
