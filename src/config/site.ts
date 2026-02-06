@@ -5,7 +5,7 @@ export const siteConfig = {
     "Handmade crochet pouches and mini bags with Islamic-inspired details, custom colors, and gift-ready finishing.",
   instagramUrl: "https://www.instagram.com/knot_sofjoy",
   whatsappUrl: "https://wa.me/919088311020",
-  contactEmail: "contactgraftcode@gmail.com",
+  contactEmail: "ruqaiyahmohammed70605@gmail.com",
   formActionUrl: "",
   navItems: [
     { label: "Bestsellers", href: "#bestsellers" },
