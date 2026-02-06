@@ -2,11 +2,11 @@ import Image from "next/image";
 import { Instagram } from "lucide-react";
 
 import { siteConfig } from "@/config/site";
-import { miniGalleryImages } from "@/data/products";
+import { miniGalleryMedia } from "@/data/products";
 
 export function InstagramCTA() {
   return (
-    <section className="mx-auto w-[min(1120px,92%)] py-12 md:py-16">
+    <section className="mx-auto w-[min(1120px,92%)] py-14 md:py-20">
       <div className="rounded-3xl border border-white/60 bg-white/75 p-6 shadow-soft md:p-8">
         <div className="mb-6 flex flex-wrap items-center justify-between gap-4">
           <div>
@@ -26,18 +26,31 @@ export function InstagramCTA() {
         </div>
 
         <div className="grid grid-cols-2 gap-3 md:grid-cols-4">
-          {miniGalleryImages.map((imageSrc, index) => (
+          {miniGalleryMedia.map((media, index) => (
             <div
-              key={`${imageSrc}-${index}`}
+              key={`${media.src}-${index}`}
               className="relative aspect-square overflow-hidden rounded-2xl border border-white/60"
             >
-              <Image
-                src={imageSrc}
-                alt={`Noor and Knot preview ${index + 1}`}
-                fill
-                className="object-cover"
-                sizes="(max-width: 768px) 44vw, (max-width: 1024px) 22vw, 16vw"
-              />
+              {media.type === "image" ? (
+                <Image
+                  src={media.src}
+                  alt={`Noor and Knot preview ${index + 1}`}
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 44vw, (max-width: 1024px) 22vw, 16vw"
+                />
+              ) : (
+                <video
+                  src={media.src}
+                  className="h-full w-full object-cover"
+                  autoPlay
+                  muted
+                  loop
+                  playsInline
+                  preload="metadata"
+                  aria-label={`Noor and Knot video preview ${index + 1}`}
+                />
+              )}
             </div>
           ))}
         </div>

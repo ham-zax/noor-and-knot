@@ -80,7 +80,7 @@ export function ContactForm() {
   };
 
   return (
-    <section id="contact" className="mx-auto w-[min(1120px,92%)] py-12 md:py-16">
+    <section id="contact" className="mx-auto w-[min(1120px,92%)] py-14 md:py-20">
       <div className="rounded-3xl border border-white/60 bg-white/80 p-6 shadow-soft md:p-8">
         <p className="text-sm uppercase tracking-[0.16em] text-taupe">Contact</p>
         <h2 className="mt-2 text-3xl font-semibold tracking-tight text-charcoal">Fastest way to order</h2>

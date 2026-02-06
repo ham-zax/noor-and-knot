@@ -66,9 +66,9 @@ Drop product images into:
 
 Current product cards use filenames like:
 
-- `product-1.jpeg`
-- `product-2.jpeg`
-- `product-3.jpeg`
+- `crochet-1.jpeg`
+- `crochet-2.jpeg`
+- `crochet-3.jpeg`
 
 Update mapped items in:
 

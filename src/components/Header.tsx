@@ -47,10 +47,9 @@ export function Header() {
               target="_blank"
               rel="noreferrer"
               aria-label="Shop on Instagram"
-              className="hidden items-center gap-2 rounded-full bg-charcoal px-4 py-2 text-sm font-medium text-sand transition hover:bg-charcoal/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold md:inline-flex"
+              className="hidden min-h-10 min-w-10 items-center justify-center rounded-full border border-taupe/30 bg-white/70 text-charcoal transition hover:border-gold/60 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold md:inline-flex"
             >
               <Instagram className="h-4 w-4" />
-              <span>Instagram</span>
             </a>
             <button
               type="button"

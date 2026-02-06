@@ -9,7 +9,7 @@ const points = [
 
 export function WhyUs() {
   return (
-    <section className="mx-auto w-[min(1120px,92%)] py-12 md:py-16">
+    <section className="mx-auto w-[min(1120px,92%)] py-14 md:py-20">
       <div className="rounded-3xl border border-white/60 bg-white/70 p-8 shadow-soft md:p-10">
         <p className="text-sm uppercase tracking-[0.16em] text-taupe">Why people love it</p>
         <h2 className="mt-2 text-3xl font-semibold tracking-tight text-charcoal">Made with care and intention</h2>

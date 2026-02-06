@@ -6,17 +6,17 @@ import { siteConfig } from "@/config/site";
 
 export function Hero() {
   return (
-    <section className="mx-auto grid w-[min(1120px,92%)] items-center gap-8 py-14 md:grid-cols-[1.05fr_0.95fr] md:py-20">
+    <section className="mx-auto grid w-[min(1120px,92%)] items-center gap-8 py-14 md:grid-cols-[1.1fr_0.9fr] md:py-20">
       <div className="space-y-6">
         <span className="inline-flex items-center rounded-full border border-gold/40 bg-white/60 px-4 py-1 text-xs font-medium uppercase tracking-[0.2em] text-taupe">
           {siteConfig.tagline}
         </span>
-        <h1 className="max-w-xl text-4xl font-semibold tracking-tight text-charcoal sm:text-5xl">
-          Handmade Crochet Pouches &amp; Mini Bags
+        <h1 className="max-w-2xl text-4xl font-semibold tracking-tight text-charcoal sm:text-5xl md:text-6xl">
+          Handmade Crochet Pouches for Everyday &amp; Eid
         </h1>
-        <p className="max-w-lg text-base leading-7 text-charcoal/75 sm:text-lg">
-          Islamic-inspired, gift-ready pieces for everyday moments and Eid gatherings in soft,
-          elegant tones.
+        <p className="max-w-xl text-base leading-7 text-charcoal/75 sm:text-lg">
+          Islamic-inspired details, custom colors, and a clean structured finish for gifting and
+          everyday modest essentials.
         </p>
         <div className="flex flex-wrap items-center gap-3">
           <a
@@ -43,29 +43,31 @@ export function Hero() {
               Shop on Instagram
             </span>
           </a>
-          <a
-            href="#contact-email"
-            className="rounded-full border border-transparent px-2 py-1 text-sm font-medium text-taupe underline decoration-gold/70 underline-offset-4 transition hover:text-charcoal focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold"
-          >
-            Prefer email inquiry?
-          </a>
+        </div>
+        <div className="flex flex-wrap items-center gap-2 text-xs uppercase tracking-[0.16em] text-taupe">
+          <span className="rounded-full border border-taupe/25 bg-white/65 px-3 py-1.5">Made to order</span>
+          <span className="rounded-full border border-taupe/25 bg-white/65 px-3 py-1.5">Custom colors</span>
+          <span className="rounded-full border border-taupe/25 bg-white/65 px-3 py-1.5">Gift-ready</span>
         </div>
       </div>
 
       <div className="grid grid-cols-2 gap-4">
         <div className="relative col-span-2 aspect-[4/3] overflow-hidden rounded-3xl border border-white/50 bg-white shadow-soft">
           <Image
-            src="/images/products/product-1.jpeg"
+            src="/images/products/crochet-7.jpeg"
             alt="Crochet drawstring pouch"
             fill
             className="object-cover"
             sizes="(max-width: 768px) 92vw, 42vw"
             priority
           />
+          <span className="absolute left-4 top-4 rounded-full border border-white/60 bg-[#f6f1e7d9] px-3 py-1 text-xs font-medium uppercase tracking-[0.14em] text-charcoal backdrop-blur-sm">
+            New arrival
+          </span>
         </div>
         <div className="relative aspect-square overflow-hidden rounded-3xl border border-white/50 bg-white shadow-soft">
           <Image
-            src="/images/products/product-2.jpeg"
+            src="/images/products/legacy-1.jpeg"
             alt="Crochet phone pouch"
             fill
             className="object-cover"
@@ -74,7 +76,7 @@ export function Hero() {
         </div>
         <div className="relative aspect-square overflow-hidden rounded-3xl border border-white/50 bg-white shadow-soft">
           <Image
-            src="/images/products/product-3.jpeg"
+            src="/images/products/crochet-6.jpeg"
             alt="Crochet mini clutch"
             fill
             className="object-cover"
