@@ -4,7 +4,7 @@ export const siteConfig = {
   description:
     "Handmade crochet pouches and mini bags with Islamic-inspired details, custom colors, and gift-ready finishing.",
   instagramUrl: "https://instagram.com/REPLACE_ME",
-  whatsappUrl: "https://wa.me/REPLACE_ME",
+  whatsappUrl: "https://wa.me/919088311020",
   contactEmail: "REPLACE_ME@example.com",
   formActionUrl: "",
   navItems: [
