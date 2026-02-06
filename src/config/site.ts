@@ -3,7 +3,7 @@ export const siteConfig = {
   tagline: "Handmade with barakah.",
   description:
     "Handmade crochet pouches and mini bags with Islamic-inspired details, custom colors, and gift-ready finishing.",
-  instagramUrl: "https://instagram.com/REPLACE_ME",
+  instagramUrl: "https://www.instagram.com/knot_sofjoy?igsh=b21hbGhnMTUxbWM5",
   whatsappUrl: "https://wa.me/919088311020",
   contactEmail: "REPLACE_ME@example.com",
   formActionUrl: "",
