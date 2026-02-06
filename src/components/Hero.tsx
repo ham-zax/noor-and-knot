@@ -1,5 +1,6 @@
 import Image from "next/image";
-import { Instagram, MessageCircle } from "lucide-react";
+import { Instagram } from "lucide-react";
+import { FaWhatsapp } from "react-icons/fa";
 
 import { siteConfig } from "@/config/site";
 
@@ -25,7 +26,7 @@ export function Hero() {
             className="rounded-full bg-charcoal px-6 py-3 text-sm font-medium text-sand transition hover:bg-charcoal/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold"
           >
             <span className="inline-flex items-center gap-2">
-              <MessageCircle className="h-4 w-4" />
+              <FaWhatsapp className="h-4 w-4" />
               Order on WhatsApp
             </span>
           </a>

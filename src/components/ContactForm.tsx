@@ -1,7 +1,8 @@
 "use client";
 
 import { FormEvent, useMemo, useState } from "react";
-import { Instagram, Mail, MessageCircle } from "lucide-react";
+import { Instagram, Mail } from "lucide-react";
+import { FaWhatsapp } from "react-icons/fa";
 
 import { siteConfig } from "@/config/site";
 import { categories } from "@/data/products";
@@ -91,7 +92,7 @@ export function ContactForm() {
             rel="noreferrer"
             className="inline-flex items-center justify-center gap-2 rounded-2xl bg-charcoal px-5 py-3 text-sm font-medium text-sand transition hover:bg-charcoal/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold"
           >
-            <MessageCircle className="h-4 w-4" />
+            <FaWhatsapp className="h-4 w-4" />
             Order on WhatsApp
           </a>
           <a

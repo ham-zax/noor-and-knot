@@ -1,5 +1,6 @@
 import Link from "next/link";
-import { Instagram, MessageCircle } from "lucide-react";
+import { Instagram } from "lucide-react";
+import { FaWhatsapp } from "react-icons/fa";
 
 import { siteConfig } from "@/config/site";
 
@@ -30,7 +31,7 @@ export function Header() {
               rel="noreferrer"
               className="inline-flex items-center gap-2 rounded-full border border-taupe/35 bg-white/70 px-3 py-2 text-sm font-medium text-charcoal transition hover:border-gold/60 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold"
             >
-              <MessageCircle className="h-4 w-4" />
+              <FaWhatsapp className="h-4 w-4" />
               <span className="hidden sm:inline">WhatsApp</span>
             </a>
             <a
