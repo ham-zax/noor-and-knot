@@ -8,7 +8,7 @@ const descriptions: Record<string, string> = {
 
 export function Collections() {
   return (
-    <section id="collections" className="mx-auto w-[min(1120px,92%)] py-14 md:py-18">
+    <section id="collections" className="mx-auto w-[min(1120px,92%)] py-12 md:py-16">
       <div className="mb-8">
         <p className="text-sm uppercase tracking-[0.16em] text-taupe">Collections</p>
         <h2 className="text-3xl font-semibold tracking-tight text-charcoal">Softly Curated</h2>

@@ -9,7 +9,7 @@ const steps = [
 
 export function HowItWorks() {
   return (
-    <section id="how-it-works" className="mx-auto grid w-[min(1120px,92%)] gap-6 py-14 md:grid-cols-[1.05fr_0.95fr] md:py-18">
+    <section id="how-it-works" className="mx-auto grid w-[min(1120px,92%)] gap-6 py-12 md:grid-cols-[1.05fr_0.95fr] md:py-16">
       <div className="rounded-3xl border border-white/60 bg-white/75 p-8 shadow-soft">
         <p className="text-sm uppercase tracking-[0.16em] text-taupe">How ordering works</p>
         <h2 className="mt-2 text-3xl font-semibold tracking-tight text-charcoal">Simple and personal</h2>

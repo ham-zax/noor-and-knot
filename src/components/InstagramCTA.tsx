@@ -6,7 +6,7 @@ import { miniGalleryImages } from "@/data/products";
 
 export function InstagramCTA() {
   return (
-    <section className="mx-auto w-[min(1120px,92%)] py-14 md:py-18">
+    <section className="mx-auto w-[min(1120px,92%)] py-12 md:py-16">
       <div className="rounded-3xl border border-white/60 bg-white/75 p-6 shadow-soft md:p-8">
         <div className="mb-6 flex flex-wrap items-center justify-between gap-4">
           <div>
