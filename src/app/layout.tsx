@@ -14,6 +14,10 @@ export const metadata: Metadata = {
   title: `${siteConfig.brandName} | ${siteConfig.tagline}`,
   description: siteConfig.description,
   metadataBase: new URL("https://noor-and-knot.vercel.app"),
+  icons: {
+    icon: "/favicon.ico",
+    apple: "/apple-icon.png",
+  },
   alternates: {
     canonical: "/",
   },
@@ -24,11 +28,20 @@ export const metadata: Metadata = {
     siteName: siteConfig.brandName,
     locale: "en_US",
     type: "website",
+    images: [
+      {
+        url: "/social/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Noor & Knot handmade crochet collection",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: `${siteConfig.brandName} | ${siteConfig.tagline}`,
     description: siteConfig.description,
+    images: ["/social/og-image.jpg"],
   },
 };
 
