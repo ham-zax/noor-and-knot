@@ -1,9 +1,9 @@
 import { categories } from "@/data/products";
 
 const descriptions: Record<string, string> = {
-  "Everyday Pouches": "Functional pieces made for daily rhythm, prayer bag essentials, and tidy carry.",
-  "Eid Gifts": "Curated colors and textures that feel festive, elegant, and gifting-ready.",
-  "Custom Orders": "Choose your palette, size, and finish for a piece that feels personal.",
+  "Everyday Pouches": "Minimal, practical pieces for daily essentials.",
+  "Eid Gifts": "Festive tones and gift-ready finishing.",
+  "Custom Orders": "Choose colors, details, and finishing, made to order.",
 };
 
 export function Collections() {
@@ -11,7 +11,7 @@ export function Collections() {
     <section id="collections" className="mx-auto w-[min(1120px,92%)] py-14 md:py-20">
       <div className="mb-8">
         <p className="text-sm uppercase tracking-[0.16em] text-taupe">Collections</p>
-        <h2 className="text-3xl font-semibold tracking-tight text-charcoal">Softly Curated</h2>
+        <h2 className="text-3xl font-semibold tracking-tight text-charcoal">Shop by Collection</h2>
       </div>
       <div className="grid gap-4 md:grid-cols-3">
         {categories.map((category) => (

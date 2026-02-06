@@ -17,7 +17,7 @@ export function ProductGrid() {
     <section id="bestsellers" className="mx-auto w-[min(1120px,92%)] py-14 md:py-20">
       <div className="mb-8">
         <p className="text-sm uppercase tracking-[0.16em] text-taupe">Bestsellers</p>
-        <h2 className="text-3xl font-semibold tracking-tight text-charcoal">Loved Pieces</h2>
+        <h2 className="text-3xl font-semibold tracking-tight text-charcoal">Most-Loved Pieces</h2>
       </div>
 
       <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
@@ -47,7 +47,7 @@ export function ProductGrid() {
                 rel="noreferrer"
                 className="inline-flex min-h-10 items-center rounded-full bg-charcoal px-4 text-xs font-semibold uppercase tracking-[0.12em] text-sand"
               >
-                Request on WhatsApp
+                Order via WhatsApp
               </a>
             </div>
           </div>
@@ -79,7 +79,7 @@ export function ProductGrid() {
                   rel="noreferrer"
                   className="inline-flex min-h-10 items-center rounded-full border border-charcoal/20 bg-sand px-4 text-xs font-semibold uppercase tracking-[0.12em] text-charcoal"
                 >
-                  Request on WhatsApp
+                  Order via WhatsApp
                 </a>
               </div>
             </div>

@@ -35,12 +35,12 @@ export function Hero() {
             href={siteConfig.instagramUrl}
             target="_blank"
             rel="noreferrer"
-            aria-label="Shop on Instagram"
+            aria-label="View Instagram"
             className="rounded-full border border-taupe/40 bg-white/70 px-6 py-3 text-sm font-medium text-charcoal transition hover:border-gold/60 hover:text-charcoal focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold"
           >
             <span className="inline-flex items-center gap-2">
               <Instagram className="h-4 w-4" />
-              Shop on Instagram
+              View Instagram
             </span>
           </a>
         </div>

@@ -27,7 +27,7 @@ export default function Home() {
         description: product.description,
         image: `https://noor-and-knot.vercel.app${product.image}`,
       },
-      priceCurrency: "AED",
+      priceCurrency: "INR",
       availability: "https://schema.org/InStock",
     })),
   };

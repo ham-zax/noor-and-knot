@@ -84,6 +84,9 @@ export function ContactForm() {
       <div className="rounded-3xl border border-white/60 bg-white/80 p-6 shadow-soft md:p-8">
         <p className="text-sm uppercase tracking-[0.16em] text-taupe">Contact</p>
         <h2 className="mt-2 text-3xl font-semibold tracking-tight text-charcoal">Fastest way to order</h2>
+        <p className="mt-2 text-sm leading-6 text-charcoal/75">
+          For quickest replies, order on WhatsApp. For browsing, view Instagram.
+        </p>
 
         <div className="mt-6 grid gap-3 md:grid-cols-2">
           <a
@@ -100,11 +103,11 @@ export function ContactForm() {
             href={siteConfig.instagramUrl}
             target="_blank"
             rel="noreferrer"
-            aria-label="Shop on Instagram"
+            aria-label="View Instagram"
             className="inline-flex items-center justify-center gap-2 rounded-2xl border border-taupe/35 bg-sand px-5 py-3 text-sm font-medium text-charcoal transition hover:border-gold/60 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold"
           >
             <Instagram className="h-4 w-4" />
-            Shop on Instagram
+            View Instagram
           </a>
         </div>
 
@@ -118,7 +121,7 @@ export function ContactForm() {
             aria-controls="email-inquiry-form"
           >
             <Mail className="h-4 w-4" />
-            {showEmailForm ? "Hide email form" : "Need detailed quote? Open email form"}
+            {showEmailForm ? "Hide email form" : "Need a detailed quote? Open email form"}
           </button>
 
           {showEmailForm ? (

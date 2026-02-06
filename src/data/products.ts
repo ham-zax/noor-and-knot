@@ -40,7 +40,7 @@ export const products: Product[] = [
   {
     id: "mini-clutch",
     name: "Mini Clutch / Wallet",
-    description: "Compact crochet clutch for cards, cash, and modest glam.",
+    description: "Compact crochet clutch for cards, cash, and elegant everyday carry.",
     attribute: "Compact fit • Hand-finished",
     fromPrice: "From INR 1,350",
     category: "Eid Gifts",

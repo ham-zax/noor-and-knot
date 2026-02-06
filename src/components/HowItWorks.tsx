@@ -1,18 +1,18 @@
 import Image from "next/image";
 
 const steps = [
-  "Choose your style",
-  "Select your colors",
-  "Submit order request",
-  "Payment + delivery confirmation",
+  "Choose your piece",
+  "Pick your colors",
+  "Send your request",
+  "Confirm and receive updates",
 ];
 
 export function HowItWorks() {
   return (
     <section id="how-it-works" className="mx-auto grid w-[min(1120px,92%)] gap-6 py-14 md:grid-cols-[1.05fr_0.95fr] md:py-20">
       <div className="rounded-3xl border border-white/60 bg-white/75 p-8 shadow-soft">
-        <p className="text-sm uppercase tracking-[0.16em] text-taupe">How ordering works</p>
-        <h2 className="mt-2 text-3xl font-semibold tracking-tight text-charcoal">Simple and personal</h2>
+        <p className="text-sm uppercase tracking-[0.16em] text-taupe">Ordering</p>
+        <h2 className="mt-2 text-3xl font-semibold tracking-tight text-charcoal">Order in a few steps</h2>
         <ol className="mt-6 space-y-3">
           {steps.map((step, index) => (
             <li key={step} className="flex items-center gap-3 rounded-2xl border border-taupe/15 bg-sand p-4">
@@ -23,6 +23,9 @@ export function HowItWorks() {
             </li>
           ))}
         </ol>
+        <p className="mt-4 text-sm text-charcoal/70">
+          You will receive a confirmation message with timeline and delivery details.
+        </p>
       </div>
 
       <div className="relative overflow-hidden rounded-3xl border border-white/60 bg-white shadow-soft">
